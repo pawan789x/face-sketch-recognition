@@ -65,8 +65,6 @@ def compute_gradient(img):
 
 def apply_stasm(img):
     landmarks = asm.search_single(img)
-    print(landmarks)
-    print(len(landmarks))
     if len(landmarks) == 0:
         print("No face found in the image")
     else:
